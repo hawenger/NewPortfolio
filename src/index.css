@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.color-shift-green {
+  -webkit-animation: color-shift 6s ease-in-out infinite both;
+  animation: color-shift 6s ease-in-out infinite both;
+}
+.color-shift-yellow {
+  -webkit-animation: color-shift 6s ease-in-out infinite both;
+  animation: color-shift 6s ease-in-out infinite both;
+}
+.color-shift-red {
+  -webkit-animation: color-shift 6s ease-in-out infinite both;
+  animation: color-shift 6s ease-in-out infinite both;
+}
+
+@-webkit-keyframes color-shift-green {
+  0% {
+    
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+  }
+  25% {
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #ed106e, 0 0 1px #f0f8ff, 0 0 1px #ed106e;
+  }
+  50% {
+
+    text-shadow: 0 0 1px #ed106e, 2px 1px 0px #ed106e, 0 0 1px #ed106e, 0 0 1px #ed106e;
+  }
+  75%{
+
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #ed106e, 0 0 1px #f0f8ff, 0 0 1px #ed106e;
+  }
+  100% {
+    
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+  }
+}
+
+@keyframes color-shift-green {
+  0% {
+    
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+  }
+  25% {
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #ed106e, 0 0 1px #f0f8ff, 0 0 1px #ed106e;
+  }
+  50% {
+
+    text-shadow: 0 0 1px #ed106e, 2px 1px 0px #ed106e, 0 0 1px #ed106e, 0 0 1px #ed106e;
+  }
+  75%{
+
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #ed106e, 0 0 1px #f0f8ff, 0 0 1px #ed106e;
+  }
+  100% {
+    
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+  }
+}
+
+
+
+@-webkit-keyframes color-shift-yellow{
+  0% {
+    
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+  }
+  25% {
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #ed106e, 0 0 1px #f0f8ff, 0 0 1px #ed106e;
+  }
+  50% {
+
+    text-shadow: 0 0 1px #ed106e, 2px 1px 0px #ed106e, 0 0 1px #ed106e, 0 0 1px #ed106e;
+  }
+  75%{
+
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #ed106e, 0 0 1px #f0f8ff, 0 0 1px #ed106e;
+  }
+  100% {
+    
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+  }
+}
+
+@keyframes color-shift-yellow {
+  0% {
+    
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+  }
+  25% {
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #ed106e, 0 0 1px #f0f8ff, 0 0 1px #ed106e;
+  }
+  50% {
+
+    text-shadow: 0 0 1px #ed106e, 2px 1px 0px #ed106e, 0 0 1px #ed106e, 0 0 1px #ed106e;
+  }
+  75%{
+
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #ed106e, 0 0 1px #f0f8ff, 0 0 1px #ed106e;
+  }
+  100% {
+    
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+  }
+}
+
+
+@-webkit-keyframes color-shift-red {
+  0% {
+    
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+  }
+  25% {
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #ed106e, 0 0 1px #f0f8ff, 0 0 1px #ed106e;
+  }
+  50% {
+
+    text-shadow: 0 0 1px #ed106e, 2px 1px 0px #ed106e, 0 0 1px #ed106e, 0 0 1px #ed106e;
+  }
+  75%{
+
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #ed106e, 0 0 1px #f0f8ff, 0 0 1px #ed106e;
+  }
+  100% {
+    
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+  }
+}
+
+@keyframes color-shift-red {
+  0% {
+    
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+  }
+  25% {
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #ed106e, 0 0 1px #f0f8ff, 0 0 1px #ed106e;
+  }
+  50% {
+
+    text-shadow: 0 0 1px #ed106e, 2px 1px 0px #ed106e, 0 0 1px #ed106e, 0 0 1px #ed106e;
+  }
+  75%{
+
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #ed106e, 0 0 1px #f0f8ff, 0 0 1px #ed106e;
+  }
+  100% {
+    
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+  }
+}

@@ -1,0 +1,55 @@
+.Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: aliceblue;
+  color: #333;
+}
+
+.scene-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+.Buttons {
+  grid-row: span 16;
+  grid-column: span 16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn {
+
+  border: none;
+  margin: 2em;
+  height: 10em;
+  width: 10em;
+  color: #faffff;
+  font-weight: bold;
+  font-size: .9em;
+  border-radius: 36px;
+  background: #f0f8ff;
+  box-shadow: 24px 24px 7px #e6eef5, -24px -24px 7px #faffff;
+  transition: linear 0.3s;
+  cursor: pointer;
+  text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+}
+
+.btn:hover {
+  border: none;
+  margin: 2em;
+  height: 10em;
+  width: 10em;
+  border-radius: 100%;
+  background: #f0f8ff;
+  box-shadow:  24px 24px 7px #e6eef5, 
+             -24px -24px 7px #faffff;
+  transform: rotate3d(1, 1, 1, 45deg);
+  font-size: .4em;
+}
