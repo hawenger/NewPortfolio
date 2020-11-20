@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 export default function AboutButton() {
     
@@ -7,7 +8,7 @@ export default function AboutButton() {
     }
 return (
     <>
-    <button className="AboutButton btn color-shift" onClick={aboutButton}>About</button>
+    <NavLink to="/about" className="AboutButton btn color-shift">About</NavLink>
     </>
 )
 

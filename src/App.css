@@ -72,7 +72,7 @@
   background: #f0f8ff;
   box-shadow:  24px 24px 7px #e6eef5, 
              -24px -24px 7px #faffff;
-  background-image: url(./flowerbrute.jpg);
+  background-image: url(./components/home/flowerbrute.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -1,27 +1,31 @@
-import React from 'react';
-import './App.css';
-import ContactButton from './contact/ContactButton'
-import AboutButton from './about/AboutButton'
-import PortfolioButton from './portfolio/PortfolioButton'
+import React, {Component} from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-function App() {
-  return (
-  <header className="Wrapper" >
-    <div className="scene-grid"> 
-      <div className="FullStackTitle">
-        <h1>FULL</h1>
-        <h1>STACK</h1>
-        <h1>DEVELOPER</h1>
-      </div>
-      <div className="Buttons">
-        <AboutButton/>
-        <ContactButton/>
-        <PortfolioButton/>
-      </div>
-      <div className="emptyTwo"></div>
-    </div>
-  </header>
-  );
+import Home from './components/home/Home';
+import About from './components/about/About';
+import Contact from './components/contact/Contact';
+import Portfolio from './components/portfolio/Portfolio';
+import Error from './components/error/Error';
+import Navigation from './components/navigation/Navigation';
+import './App.css';
+
+class App extends Component {
+  render() {
+    return (      
+       <BrowserRouter>
+        <div>
+          <Navigation />
+            <Switch>
+             <Route path="/" component={Home} exact/>
+             <Route path="/about" component={About}/>
+             <Route path="/contact" component={Contact}/>
+             <Route path="/portfolio" component={Portfolio}/>
+            <Route component={Error}/>
+           </Switch>
+        </div> 
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
