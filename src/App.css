@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: aliceblue;
   color: #333;
+  background-color: aliceblue;
 }
 
 .scene-grid {
@@ -13,6 +13,7 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   height: 100%;
   width: 100%;
+
 }
 
 .Buttons {
@@ -47,7 +48,12 @@
 
 .btn {
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   border: none;
+  text-align: center;
   margin: 2em;
   height: 10em;
   width: 10em;
