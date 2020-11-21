@@ -1,6 +1,3 @@
-.Portfolio-Wrapper{
-}
-
 .Display-Grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -101,6 +98,8 @@ background: #ffba49;
 box-shadow:  6px 6px 13px #edad44, 
             -6px -6px 13px #ffc74e;
 color: #333;
+transform: translate3d(3px, 3px, 3px);
+box-shadow: 6px 6px 7px 0px #edad44, -6px -6px 13px #ffc74e;
 }
 
 .PortfolioLinks {

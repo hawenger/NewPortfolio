@@ -1,0 +1,21 @@
+.nav-bar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.navLink {
+    margin-right: .5em;
+    margin-left: .5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+}
+.navLink:hover {
+    margin-right: .5em;
+    margin-left: .5em;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #333;
+}
