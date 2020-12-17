@@ -1,11 +1,20 @@
 import React from 'react';
+import NavButton from '../navigation/NavButton'
+import './About.css'
  
 const About = () => {
     return (
-       <div>
-          <h1>About Hannah</h1>
-          <h3>COMING SOON</h3>
-       </div>
+      <div className="Wrapper" >
+         <div className="scene-grid">
+            <div className="scene-container-contact">
+               <NavButton/>
+               <div className="button-container-about">
+                     <div className="btn"><h2>HANNAH WENGER</h2></div>
+                     <div className="btn">(COMING SOON)</div>
+               </div>
+            </div> 
+         </div> 
+      </div>
     );
 }
  

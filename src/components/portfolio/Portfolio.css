@@ -85,6 +85,7 @@
     display: flex;
     align-items: flex-start;
     width: 15em;
+    flex-flow: row;
 }
 @media (min-width: 43em) {
 

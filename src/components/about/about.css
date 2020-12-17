@@ -1,6 +1,11 @@
-scene-container-about {
-    width: 100%;
-    min-height: 100vh;
+.button-container-about {
     display: flex;
-
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 62em) {
+    .button-container-about {
+        flex-flow: row;
+    }
 }
