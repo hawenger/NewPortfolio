@@ -1,10 +1,5 @@
-*, :after, :before {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -17,60 +12,80 @@ code {
     monospace;
 }
 
-.color-shift-green {
-  -webkit-animation: color-shift 6s ease-in-out infinite both;
-  animation: color-shift 6s ease-in-out infinite both;
-}
-.color-shift-yellow {
-  -webkit-animation: color-shift 6s ease-in-out infinite both;
-  animation: color-shift 6s ease-in-out infinite both;
-}
-.color-shift-red {
-  -webkit-animation: color-shift 6s ease-in-out infinite both;
-  animation: color-shift 6s ease-in-out infinite both;
-}
 
-@-webkit-keyframes color-shift-green {
+.tv-screen-animation {
+  -webkit-animation: tv-screen-animation .001s ease-in-out infinite both;
+  animation: tv-screen-animation .09s ease-in-out infinite both;
+}
+@-webkit-keyframes tv-screen-animation {
   0% {
-    
-    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+    background-position: top;
   }
-  25% {
-    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #ed106e, 0 0 1px #f0f8ff, 0 0 1px #ed106e;
-  }
-  50% {
+  99.98% {
 
-    text-shadow: 0 0 1px #ed106e, 2px 1px 0px #ed106e, 0 0 1px #ed106e, 0 0 1px #ed106e;
+    background-position: bottom;
   }
-  75%{
-
-    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #ed106e, 0 0 1px #f0f8ff, 0 0 1px #ed106e;
+  99.99%{
+    background-position: center;
+   
   }
   100% {
     
-    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+    background-position: top;
   }
 }
 
-@keyframes color-shift-green {
+@keyframes tv-screen-animation {
   0% {
-    
-    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+    background-position: top;
+  }
+  
+  100% {
+
+    background-position: bottom;
+  }
+
+}
+
+@-webkit-keyframes tv-animation {
+  0% {
+    background: rgb(111 109 109 / 35%);
   }
   25% {
-    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #ed106e, 0 0 1px #f0f8ff, 0 0 1px #ed106e;
+    background: rgb(111 109 109 / 0.68);
   }
   50% {
 
-    text-shadow: 0 0 1px #ed106e, 2px 1px 0px #ed106e, 0 0 1px #ed106e, 0 0 1px #ed106e;
+    background: rgb(189 178 131 / 0.39);
   }
   75%{
 
-    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #ed106e, 0 0 1px #f0f8ff, 0 0 1px #ed106e;
+    background: rgb(111 109 109 / 0.68);
   }
   100% {
     
-    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+    background: rgb(111 109 109 / 35%);
+  }
+}
+
+@keyframes tv-animation {
+  0% {
+    background: rgb(111 109 109 / 35%);
+  }
+  25% {
+    background: rgb(111 109 109 / 0.68);
+  }
+  50% {
+
+    background: rgb(189 178 131 / 0.39);
+  }
+  75%{
+
+    background: rgb(111 109 109 / 0.68);
+  }
+  100% {
+    
+    background: rgb(111 109 109 / 35%);
   }
 }
 

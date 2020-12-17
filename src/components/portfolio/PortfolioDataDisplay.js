@@ -1,19 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import EmbedLinks from './EmbedLinks'
+import LinkList from './LinkList'
 
 export default function PortfolioDataDisplay(props) {
-    const seven = `http://se-7-en.herokuapp.com/`
-    const robert = `https://vast-depths-13570.herokuapp.com/`
+
+    const linkData = [{link: `https://vast-depths-13570.herokuapp.com/`, name: `Robert`, img:'NA'}, {link: `http://se-7-en.herokuapp.com/`, name: `Se7en`, img:'NA'}, {link: `https://burgerpolice.herokuapp.com/`, name: `Burger Police`, img:'NA'}, {link: `https://hawenger.github.io/PasswordGenerator/`, name: `EyePass`, img:'NA'}, {link: `https://hawenger.github.io/ClickbaitQuiz/`, name: `Clickbait Quiz`, img:'NA'}, {link: `https://sbhwang23.github.io/Turnip-Da-Beet/`, name: `Turnip Da Beet`, img:'NA'}, {link: `https://warm-river-71685.herokuapp.com/`, name: `Noted`, img:'NA'} ]
+    
+    const [displayLinks, setDisplayLinks] = useState(linkData);
+
     if(props.channels === 'display')
     return (
         <div className="PortfolioLinks">
-            <a className="link" href={seven}>Se7en</a>
-            <a className="link" href={robert}>Robert</a>
-            <a className="link" href="https://burgerpolice.herokuapp.com/">Burger Police</a>
-            <a className="link" href="https://hawenger.github.io/PasswordGenerator/">EyePass</a>
-            <a className="link" href="https://hawenger.github.io/ClickbaitQuiz/">Clickbait Quiz</a>
-            <a className="link" href="https://sbhwang23.github.io/Turnip-Da-Beet/">Turnip Da Beet</a>
-            <a className="link" href="https://warm-river-71685.herokuapp.com/">Note Taker</a>
+            <LinkList displayLinks = {displayLinks} />
         </div>
     )
     return(

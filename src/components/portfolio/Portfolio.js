@@ -3,10 +3,10 @@ import "./Portfolio.css"
 import Channels from './Channels'
 import NavButton from '../navigation/NavButton'
 import PortfolioDataDisplay from './PortfolioDataDisplay';
+import GithubButton from './GithubButton';
  
 const Portfolio = () => {
 
-    //const seven = `http://se-7-en.herokuapp.com/`
     const robert = `https://vast-depths-13570.herokuapp.com/`
     let linkArray = [robert]
     let linkState = linkArray[Math.floor(Math.random()*linkArray.length)];
@@ -38,13 +38,18 @@ const Portfolio = () => {
                 <div className="scene-container-portfolio">
                     <NavButton/>
                     <div className="tv-back">
-                        <div className="tv-screen">
+                        <div className="tv-screen-animation tv-screen">
                             <PortfolioDataDisplay let channels ={channels} let link = {link}/>
                         </div>
                     </div>
-                    <button onClick={btnClick} style={{backgroundColor:'transparent', cursor:'pointer', color: 'yellow', fontSize: '2em', border:'none'}}>
-                        <Channels let toggle = {toggle} />  
-                    </button>
+                    <div className="button-container">
+                        <button onClick={btnClick} style={{backgroundColor:'transparent', cursor:'pointer', color: 'yellow', fontSize: '2em', border:'none'}}>
+                            <Channels let toggle = {toggle} />  
+                        </button>
+                        <button style={{backgroundColor:'transparent', cursor:'pointer', color: 'yellow', fontSize: '2em', border:'none'}}>
+                            <GithubButton />
+                        </button>
+                    </div>
                 </div> 
             </div> 
         </div>

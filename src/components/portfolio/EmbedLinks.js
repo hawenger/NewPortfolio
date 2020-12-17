@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 export default function EmbedLinks(props) {
 
     if(props.channels === 'hidden')
