@@ -1,197 +1,106 @@
-.Display-Grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+.scene-container-portfolio {
+    width: 100%;
     min-height: 100vh;
-    width: 100%;
-    background-color: #ffba49;
-    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
 }
-
-.Play-Side  {
-    grid-column: span 12;
-    grid-row: span 18;
-    height: 100%;
-    width: 100%;
-}
-
-.Play-Grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    min-height: 100vh;
-    width: 100%;
-}
-.Play-Empty-1 {
-    grid-column: span 12;
-    grid-row: span 7;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-}
-
-.Play-Empty-Grid {
-    display: grid;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    border: 1em solid #ffba49;
-    border-radius: 50%;
-}
-.grid {
-    grid-row: span 1;
-    grid-column: span 1;
-    height: 100%;
-    width: 100%;
-    color: white;
-    text-shadow: -6px 8px #333;
-}
-.Play-Empty-2 {
-    grid-column: span 6;
-    grid-row: span 4;
-    height: 100%;
-    width: 100%;
-}
-.Play-Title {
-    grid-column: span 6;
-    grid-row: span 4;
-    height: 100%;
-    width: 100%;
+.tv-back {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    background: #f0f8ff;
+    box-shadow: 24px 24px 7px #e6eef5, -24px -24px 6px #faffff;
+    border-radius: 2em;
 }
-.Play-Empty-3 {
-    grid-column: span 12;
-    grid-row: span 7;
-    height: 100%;
-    width: 100%;
-}
-.Work-Side {
-    grid-column: span 6;
-    grid-row: span 18;
-    width: 100%;
-    height: 100%;
-}
-
-.GithubButton {
-text-decoration: none;
-color: white;
-border: none;
-border-radius: 7px;
-background: #ffba49;
-box-shadow:  6px 6px 13px #edad44, 
-             -6px -6px 13px #ffc74e;
-padding: 1em;
-cursor: pointer;
-transition: linear 0.3s;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
--webkit-font-smoothing: antialiased;
-font-weight: bold;
-}
-
-.GithubButton:hover {
-border: none;
-border-radius: 7px;
-background: #ffba49;
-box-shadow:  6px 6px 13px #edad44, 
-            -6px -6px 13px #ffc74e;
-color: #333;
-transform: translate3d(3px, 3px, 3px);
-box-shadow: 6px 6px 7px 0px #edad44, -6px -6px 13px #ffc74e;
+.tv-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    margin: 2em;
+    height: 15em;
+    width: 15em;
+    color: #333;
+    font-size: 1em;
+    border-radius: 36px;
+    background: #f0f8ff;
+    background-image: url(./static.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 24px 24px 7px #e6eef5, -16px -19px 7px #faffff;
+    transition: linear 0.4s;
+    cursor: pointer;
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
 }
 
 .PortfolioLinks {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    font-size: 1.1em;
+    background: rgb(111 109 109 / 35%);
+    width: 100%;
     height: 100%;
+    border-radius: 36px;
+    border: rgb(0 0 0 / 8%) .5em solid;
+    font-weight: lighter;
 }
-
 .link {
-    margin-top: 1em;
-    margin-bottom: 1em;
     color: #333;
-    text-decoration: none;
-    cursor: pointer;
-    transition: linear 0.2s;
+    text-decoration-color: yellow;
+    text-shadow: 20px -12px 11px #ffff00;
+    background-color: rgb(255 255 0 / 76%);
+    padding: .1em 3em;
+    border-radius: .1em;
 }
 .link:hover {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 1.3em;
+    text-decoration: underline;
+    text-decoration-color:#333;
 }
 
-/*ANIMATION*/
-.jiggle {
-    -webkit-animation: jiggle 0.9s 6s both;
-    animation: jiggle 0.9s 6s both;
+.visit {
+    background-color: rgb(240 248 255 / 70%);
+    height: 15em;
+    width: 15em;
+    position: absolute;
 }
 
-@-webkit-keyframes jiggle {
-    0% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
+.visitBtn {
+    padding: 2em 3em;
+    border-radius: 1em;
+    position: relative;
+    top: 5em;
+    background-color: aliceblue;
+    border: solid .2em yellow;
+}
+@media (min-width: 43em) {
+
+    .tv-screen {
+        height: 25em;
+        width: 25em;
     }
-    30% {
-        -webkit-transform: scale3d(1.25, 0.75, 1);
-        transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-        -webkit-transform: scale3d(0.75, 1.25, 1);
-        transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-        -webkit-transform: scale3d(1.15, 0.85, 1);
-        transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-        -webkit-transform: scale3d(0.95, 1.05, 1);
-        transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-        -webkit-transform: scale3d(1.05, 0.95, 1);
-        transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
+    .link {
+        padding: .2em 4em;
     }
 }
-
-@keyframes jiggle {
-    0% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
+@media (min-width: 62em) {
+    .tv-screen {
+        height: 30em;
+        width: 30em;
     }
-    30% {
-        -webkit-transform: scale3d(1.25, 0.75, 1);
-        transform: scale3d(1.25, 0.75, 1);
+    .PortfolioLinks {
+        font-size: 1.5em;
     }
-    40% {
-        -webkit-transform: scale3d(0.75, 1.25, 1);
-        transform: scale3d(0.75, 1.25, 1);
+    .link {
+        padding: .3em 5em;
     }
-    50% {
-        -webkit-transform: scale3d(1.15, 0.85, 1);
-        transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-        -webkit-transform: scale3d(0.95, 1.05, 1);
-        transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-        -webkit-transform: scale3d(1.05, 0.95, 1);
-        transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
+}
+@media (min-width: 82em) {
+    
 }

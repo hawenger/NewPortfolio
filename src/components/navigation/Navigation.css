@@ -1,9 +1,13 @@
 .nav-bar {
-    background-color: white;
     display: flex;
-    align-items: center;
     width: 100%;
     justify-content: center;
+    padding: 2em;
+    border-radius: 2em;
+    background-color: aliceblue;
+    box-shadow: -8px 10px #e7eff6;
+    border: solid 1em #faffff;
+    transition: linear, 0.3s;
 }
 .navLink {
     margin-right: .5em;
@@ -11,6 +15,9 @@
     text-decoration: none;
     text-transform: uppercase;
     color: #333;
+    transition: linear, 0.2s;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 500;
 }
 .navLink:hover {
     margin-right: .5em;
@@ -18,4 +25,5 @@
     text-decoration: underline;
     text-transform: uppercase;
     color: #333;
+    text-decoration-color: yellow;
 }

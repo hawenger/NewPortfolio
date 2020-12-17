@@ -1,66 +1,53 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./Portfolio.css"
-import TitleButton from './TitleButton';
+import Channels from './Channels'
+import NavButton from '../navigation/NavButton'
 import PortfolioDataDisplay from './PortfolioDataDisplay';
  
 const Portfolio = () => {
+
+    //const seven = `http://se-7-en.herokuapp.com/`
+    const robert = `https://vast-depths-13570.herokuapp.com/`
+    let linkArray = [robert]
+    let linkState = linkArray[Math.floor(Math.random()*linkArray.length)];
+    const [link, setLink] = useState(linkState);
+    const [toggle, setToggle] = useState('on');
+    const [channels, setChannels] = useState('hidden');
+
+    function changeToggle() {
+        if(toggle === 'on') {
+            setToggle('off')
+            setChannels('display')
+        }
+        if(toggle == 'off') {
+            setToggle('on')
+            setChannels('hidden')
+            randomLink();
+        }
+    }
+    function randomLink() {
+        let randomLink = linkArray[Math.floor(Math.random()*linkArray.length)];
+        setLink(randomLink);
+    }
+    function btnClick() {
+        changeToggle();
+    }
     return (
-        <div className="Wrapper Portfolio-Wrapper">
-            <div className="Display-Grid">
-                <div className="Play-Side">
-                    <div className="Play-Grid">
-                        <div className="Play-Empty-1">
-                            <div className="Play-Empty-Grid">
-                                <div className="grid">P</div>
-                                <div className="grid">O</div>
-                                <div className="grid">I</div>
-                                <div className="grid">L</div>
-                                <div className="grid">F</div>
-                                <div className="grid">O</div>
-                                <div className="grid">P</div>
-                                <div className="grid">I</div>
-                                <div className="grid">O</div>
-                                <div className="grid">F</div>
-                                <div className="grid">F</div>
-                                <div className="grid">F</div>
-                                <div className="grid">O</div>
-                                <div className="grid">I</div>
-                                <div className="grid">O</div>
-                                <div className="grid">L</div>
-                                <div className="grid">L</div>
-                                <div className="grid">I</div>
-                                <div className="grid">F</div>
-                                <div className="grid">P</div>
-                                <div className="grid">R</div>
-                                <div className="grid">P</div>
-                                <div className="grid">R</div>
-                                <div className="grid">T</div>
-                                <div className="grid">F</div>
-                                <div className="grid">L</div>
-                                <div className="grid">F</div>
-                                <div className="grid">O</div>
-                                <div className="grid">I</div>
-                                <div className="grid">O</div>
-                                <div className="grid">I</div>
-                                <div className="grid">P</div>
-                                <div className="grid">O</div>
-                                <div className="grid">R</div>
-                                <div className="grid">P</div>
-                                <div className="grid">R</div>
-                            </div>
+        <div className="Wrapper" >
+            <div className="scene-grid">
+                <div className="scene-container-portfolio">
+                    <NavButton/>
+                    <div className="tv-back">
+                        <div className="tv-screen">
+                            <PortfolioDataDisplay let channels ={channels} let link = {link}/>
                         </div>
-                        <div className="Play-Empty-2"></div>
-                        <div className="Play-Title">
-                            <TitleButton/>
-                        </div>
-                        <div className="Play-Empty-3"></div>
                     </div>
-                </div>
-                <div className="Work-Side">
-                    <PortfolioDataDisplay/>
-                </div>
-            </div>
-       </div>
+                    <button onClick={btnClick} style={{backgroundColor:'transparent', cursor:'pointer', color: 'yellow', fontSize: '2em', border:'none'}}>
+                        <Channels let toggle = {toggle} />  
+                    </button>
+                </div> 
+            </div> 
+        </div>
     );
 }
  
